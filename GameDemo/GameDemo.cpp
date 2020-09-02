@@ -10,7 +10,10 @@ CMiniDumper g_miniDumper( true );
 
 #include "ControlEx.h"
 
-class CLoginFrameWnd : public CWindowWnd, public INotifyUI, public IMessageFilterUI
+class CLoginFrameWnd : 
+	public CWindowWnd,
+	public INotifyUI,
+	public IMessageFilterUI
 {
 public:
     CLoginFrameWnd() { };
@@ -114,6 +117,12 @@ public:
         return 0;
     }
 
+	LRESULT OnKeyDown(UINT uMsg, WPARAM wParam, LPARAM lParam, BOOL& bHandled)
+	{
+		bHandled = FALSE;
+		return 0;
+	}
+
     LRESULT HandleMessage(UINT uMsg, WPARAM wParam, LPARAM lParam)
     {
         LRESULT lRes = 0;
@@ -125,6 +134,7 @@ public:
         case WM_NCPAINT:       lRes = OnNcPaint(uMsg, wParam, lParam, bHandled); break;
         case WM_NCHITTEST:     lRes = OnNcHitTest(uMsg, wParam, lParam, bHandled); break;
         case WM_SIZE:          lRes = OnSize(uMsg, wParam, lParam, bHandled); break;
+		case WM_KEYDOWN:       lRes = OnKeyDown(uMsg, wParam, lParam, bHandled); break;
         default:
             bHandled = FALSE;
         }

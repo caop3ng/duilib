@@ -671,8 +671,14 @@ bool CPaintManagerUI::PreMessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam,
         {
            // Tabbing between controls
            if( wParam == VK_TAB ) {
-               if( m_pFocus && m_pFocus->IsVisible() && m_pFocus->IsEnabled() && _tcsstr(m_pFocus->GetClass(), DUI_CTR_RICHEDIT) != NULL ) {
-                   if( static_cast<CRichEditUI*>(m_pFocus)->IsWantTab() ) return false;
+               if( m_pFocus 
+				   && m_pFocus->IsVisible() 
+				   && m_pFocus->IsEnabled() 
+				   && _tcsstr(m_pFocus->GetClass(), DUI_CTR_RICHEDIT) != NULL ) { // m_pFocus 类名里有 "RichEdit"
+				   if (static_cast<CRichEditUI*>(m_pFocus)->IsWantTab())// 如果想获得Tab，就返回 false？
+				   {
+					   return false;
+				   }
                }
                SetNextTabControl(::GetKeyState(VK_SHIFT) >= 0);
                return true;
@@ -773,6 +779,7 @@ bool CPaintManagerUI::MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, LR
 
     // Custom handling of events
     switch( uMsg ) {
+	// 这个是 duilib 库自定义的 Notify 消息。
     case WM_APP + 1:
         {
 			m_bAsyncNotifyPosted = false;
@@ -3525,6 +3532,7 @@ bool CPaintManagerUI::TranslateMessage(const LPMSG pMsg)
 					if (pT->TranslateAccelerator(pMsg))
 						return true;
 
+					// PreMessageHandler 不是虚函数
 					pT->PreMessageHandler(pMsg->message, pMsg->wParam, pMsg->lParam, lRes);
 					// 					if( pT->PreMessageHandler(pMsg->message, pMsg->wParam, pMsg->lParam, lRes) ) 
 					// 						return true;
@@ -3548,6 +3556,7 @@ bool CPaintManagerUI::TranslateMessage(const LPMSG pMsg)
 				if (pT->TranslateAccelerator(pMsg))
 					return true;
 
+				// PreMessageHandler 不是虚函数
 				if( pT->PreMessageHandler(pMsg->message, pMsg->wParam, pMsg->lParam, lRes) ) 
 					return true;
 
