@@ -37,3 +37,6 @@ QQDemo/Debug/mt.dep
 *.log
 *.sdf
 *.opensdf
+*.suo
+*.res
+*.ipch

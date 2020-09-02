@@ -133,6 +133,7 @@ public:
         return CWindowWnd::HandleMessage(uMsg, wParam, lParam);
     }
 
+	// IMessageFilterUI
     LRESULT MessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, bool& bHandled)
     {
         if( uMsg == WM_KEYDOWN ) {

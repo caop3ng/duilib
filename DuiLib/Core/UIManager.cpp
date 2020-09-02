@@ -656,6 +656,7 @@ void CPaintManagerUI::SetLayeredImage(LPCTSTR pstrImage)
 
 bool CPaintManagerUI::PreMessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam, LRESULT& /*lRes*/)
 {
+	// 调用 AddPreMessageFilter 添加 m_aPreMessageFilters
     for( int i = 0; i < m_aPreMessageFilters.GetSize(); i++ ) 
     {
         bool bHandled = false;
@@ -664,6 +665,7 @@ bool CPaintManagerUI::PreMessageHandler(UINT uMsg, WPARAM wParam, LPARAM lParam,
             return true;
         }
     }
+	// 如果上面过滤没有被处理，才会走到这里。
     switch( uMsg ) {
     case WM_KEYDOWN:
         {
@@ -3538,8 +3540,9 @@ bool CPaintManagerUI::TranslateMessage(const LPMSG pMsg)
 	{
 		for( int i = 0; i < m_aPreMessages.GetSize(); i++ ) 
 		{
-			int size = m_aPreMessages.GetSize();
+			//int size = m_aPreMessages.GetSize();
 			CPaintManagerUI* pT = static_cast<CPaintManagerUI*>(m_aPreMessages[i]);
+			// 找到消息对应的绘制窗口，不管过滤与否都会结束循环。
 			if(pMsg->hwnd == pT->GetPaintWindow())
 			{
 				if (pT->TranslateAccelerator(pMsg))
