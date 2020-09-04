@@ -376,13 +376,13 @@ CControlUI* CDialogBuilder::_Parse(CMarkupNode* pRoot, CControlUI* pParent, CPai
 #ifndef _DEBUG
         ASSERT(pControl);
 #endif // _DEBUG
-			if( pControl == NULL )
-			{
-#ifdef _DEBUG
-				DUITRACE(_T("Unknow Control:%s"),pstrNodeName);
-#endif
-				continue;
-			}
+		if( pControl == NULL )
+		{
+//#ifdef _DEBUG // DUITRACE 只有 DEBUG 才会生效。
+          DUITRACE(_T("Unknow Control:%s"),pstrNodeName);
+//#endif
+          continue;
+		}
 
         // Add children
         if( node.HasChildren() ) {
@@ -394,6 +394,7 @@ CControlUI* CDialogBuilder::_Parse(CMarkupNode* pRoot, CControlUI* pParent, CPai
         // 因为某些属性和父窗口相关，比如selected，必须先Add到父窗口
 		if( pParent != NULL ) {
             LPCTSTR lpValue = szValue;
+            // 属性列表里都没找到 "cover", 暂时先不管。
             if( node.GetAttributeValue(_T("cover"), szValue, cchLen) && _tcscmp(lpValue, _T("true")) == 0 ) {
                 pParent->SetCover(pControl);
             }
@@ -421,6 +422,7 @@ CControlUI* CDialogBuilder::_Parse(CMarkupNode* pRoot, CControlUI* pParent, CPai
                 pControl->SetAttributeList(pDefaultAttributes);
             }
         }
+        // 这里的 Attributes 会把 default 的覆盖。
         // Process attributes
         if( node.HasAttributes() ) {
             // Set ordinary attributes
@@ -429,6 +431,7 @@ CControlUI* CDialogBuilder::_Parse(CMarkupNode* pRoot, CControlUI* pParent, CPai
                 pControl->SetAttribute(node.GetAttributeName(i), node.GetAttributeValue(i));
             }
         }
+        // 没看明白为什么要把 pManager 设置成空
         if( pManager ) {
             pControl->SetManager(NULL, NULL, false);
         }
