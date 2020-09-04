@@ -2425,7 +2425,8 @@ HFONT CPaintManagerUI::AddFont(int id, LPCTSTR pStrFontName, int nSize, bool bBo
 			delete pOldFontInfo;
             m_ResInfo.m_CustomFonts.Remove(idBuffer);
 		}
-
+        
+        // 完全没必要自己写个hash表，用 stl map 完全可以
 		if( !m_ResInfo.m_CustomFonts.Insert(idBuffer, pFontInfo) ) 
 		{
 			::DeleteObject(hFont);

@@ -23,4 +23,7 @@
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\bin\test1.xml" />
+  </ItemGroup>
 </Project>

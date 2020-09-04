@@ -52,16 +52,16 @@
 			<Edit text="扩展文本框" tipvalue="扩展文本框" width="100" />
 			</TreeNode>
 			<TreeNode text="A2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
-			<TreeNode text="B2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
-				<TreeNode text="C2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
-					<TreeNode text="D2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+				<TreeNode text="B2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+					<TreeNode text="C2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+						<TreeNode text="D2" folderattr="padding=&quot;0,1,0,0&quot; width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/treeview_b.png' source='0,0,16,16' &quot; hotimage=&quot;file='Icon/treeview_b.png' source='16,0,32,16' &quot; selectedimage=&quot;file='Icon/treeview_a.png' source='0,0,16,16' &quot; selectedhotimage=&quot;file='Icon/treeview_a.png' source='16,0,32,16' &quot;" checkboxattr="width=&quot;16&quot; height=&quot;16&quot; normalimage=&quot;file='Icon/unchecked.png' &quot; selectedimage=&quot;file='Icon/checked.png' &quot;" >
+							<Option text="扩展单选框" width="100" group="RadioBoxTest" />
+						</TreeNode>
 						<Option text="扩展单选框" width="100" group="RadioBoxTest" />
 					</TreeNode>
-					<Option text="扩展单选框" width="100" group="RadioBoxTest" />
+					<CheckBox text="扩展复选框" width="100" />
 				</TreeNode>
 				<CheckBox text="扩展复选框" width="100" />
-			</TreeNode>
-			<CheckBox text="扩展复选框" width="100" />
 			</TreeNode>
 		</TreeView>
 	</VerticalLayout>

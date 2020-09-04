@@ -280,6 +280,7 @@ public:
     TFontInfo* GetDefaultFontInfo();
     void SetDefaultFont(LPCTSTR pStrFontName, int nSize, bool bBold, bool bUnderline, bool bItalic, bool bShared = false);
     DWORD GetCustomFontCount(bool bShared = false) const;
+    // 内部创建字体
     HFONT AddFont(int id, LPCTSTR pStrFontName, int nSize, bool bBold, bool bUnderline, bool bItalic, bool bShared = false);
     HFONT GetFont(int id);
     HFONT GetFont(LPCTSTR pStrFontName, int nSize, bool bBold, bool bUnderline, bool bItalic);

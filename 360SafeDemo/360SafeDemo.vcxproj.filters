@@ -24,4 +24,9 @@
       <Filter>src</Filter>
     </ClInclude>
   </ItemGroup>
+  <ItemGroup>
+    <Xml Include="..\bin\skin\360SafeRes\skin.xml">
+      <Filter>src</Filter>
+    </Xml>
+  </ItemGroup>
 </Project>
