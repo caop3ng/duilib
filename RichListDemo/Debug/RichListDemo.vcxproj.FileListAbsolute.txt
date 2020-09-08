@@ -1,0 +1,2 @@
+E:\mycode\duilib\bin\RichListDemo_d.pdb
+E:\mycode\duilib\RichListDemo\Debug\RichListDemo_d.pdb
