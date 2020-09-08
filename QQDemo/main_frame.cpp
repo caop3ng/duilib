@@ -555,11 +555,14 @@ void MainFrame::Notify(TNotifyUI& msg)
 							ChatDialog* pChatDialog = new ChatDialog(szBuf, background->GetBkColor(), myself_info_, friend_info);
 							if( pChatDialog == NULL )
 								return;
-#if defined(WIN32) && !defined(UNDER_CE)
-							pChatDialog->Create(NULL, _T("ChatDialog"), UI_WNDSTYLE_FRAME | WS_POPUP,  NULL, 0, 0, 0, 0);
-#else
+
+//#if defined(WIN32) && !defined(UNDER_CE)
+//							pChatDialog->Create(NULL, _T("ChatDialog"), UI_WNDSTYLE_FRAME | WS_POPUP,  NULL, 0, 0, 0, 0);
+//#else
+//							pChatDialog->Create(NULL, _T("ChatDialog"), UI_WNDSTYLE_FRAME | WS_POPUP, NULL, 0, 0, 0, 0);
+//#endif
 							pChatDialog->Create(NULL, _T("ChatDialog"), UI_WNDSTYLE_FRAME | WS_POPUP, NULL, 0, 0, 0, 0);
-#endif
+
 							skin_changed_observer_.AddReceiver(pChatDialog);
 
 							pChatDialog->CenterWindow();

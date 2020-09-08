@@ -6,6 +6,7 @@
 template <typename ReturnT, typename ParamT>
 class ReceiverImplBase;
 
+// 实际上这应该是 Subject
 template <typename ReturnT, typename ParamT>
 class ObserverImplBase
 {

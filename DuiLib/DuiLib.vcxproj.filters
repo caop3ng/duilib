@@ -13,7 +13,7 @@
     <Filter Include="Utils">
       <UniqueIdentifier>{096f090d-206a-46c0-ac14-1cdee75d3f5c}</UniqueIdentifier>
     </Filter>
-    <Filter Include="pch">
+    <Filter Include="Pch">
       <UniqueIdentifier>{388d78cb-90e8-4481-98ee-c571783e5495}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
@@ -124,7 +124,7 @@
       <Filter>Utils</Filter>
     </ClCompile>
     <ClCompile Include="StdAfx.cpp">
-      <Filter>pch</Filter>
+      <Filter>Pch</Filter>
     </ClCompile>
     <ClCompile Include="UIlib.cpp" />
   </ItemGroup>
@@ -244,7 +244,7 @@
       <Filter>Utils</Filter>
     </ClInclude>
     <ClInclude Include="StdAfx.h">
-      <Filter>pch</Filter>
+      <Filter>Pch</Filter>
     </ClInclude>
     <ClInclude Include="UIlib.h" />
   </ItemGroup>
