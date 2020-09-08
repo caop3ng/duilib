@@ -284,19 +284,19 @@
     <ClCompile Include="UIMicroBlog.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chat_dialog.hpp" />
-    <ClInclude Include="ColorPicker.hpp" />
-    <ClInclude Include="color_skin.hpp" />
-    <ClInclude Include="debug.hpp" />
-    <ClInclude Include="main_frame.hpp" />
-    <ClInclude Include="observer_impl_base.hpp" />
+    <ClInclude Include="chat_dialog.h" />
+    <ClInclude Include="ColorPicker.h" />
+    <ClInclude Include="color_skin.h" />
+    <ClInclude Include="debug.h" />
+    <ClInclude Include="main_frame.h" />
+    <ClInclude Include="observer_impl_base.h" />
     <ClInclude Include="resource.h" />
-    <ClInclude Include="skin_change_event.hpp" />
+    <ClInclude Include="skin_change_event.h" />
     <ClInclude Include="StdAfx.h" />
-    <ClInclude Include="UIFriends.hpp" />
-    <ClInclude Include="UIGroups.hpp" />
-    <ClInclude Include="UIListCommonDefine.hpp" />
-    <ClInclude Include="UIMicroBlog.hpp" />
+    <ClInclude Include="UIFriends.h" />
+    <ClInclude Include="UIGroups.h" />
+    <ClInclude Include="UIListCommonDefine.h" />
+    <ClInclude Include="UIMicroBlog.h" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="QQDemo.rc" />

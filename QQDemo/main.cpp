@@ -18,7 +18,7 @@
 
 #include "stdafx.h"
 #include "..\DuiLib\Utils\WinImplBase.h"
-#include "main_frame.hpp"
+#include "main_frame.h"
 
 #include <atlbase.h>
 CComModule _Module;

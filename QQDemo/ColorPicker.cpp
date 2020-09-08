@@ -4,8 +4,8 @@
 #include <shellapi.h>
 #endif
 
-#include "ColorPicker.hpp"
-#include "chat_dialog.hpp"
+#include "ColorPicker.h"
+#include "chat_dialog.h"
 
 static DWORD Colors[5][8] = 
 {

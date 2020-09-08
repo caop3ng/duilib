@@ -2,8 +2,8 @@
 #include <windows.h>
 #include <shellapi.h>
 
-#include "chat_dialog.hpp"
-#include "ColorPicker.hpp"
+#include "chat_dialog.h"
+#include "ColorPicker.h"
 
 const TCHAR* const kTitleControlName = _T("apptitle");
 const TCHAR* const kCloseButtonControlName = _T("closebtn");

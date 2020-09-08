@@ -4,8 +4,8 @@
 #include <shellapi.h>
 #endif
 
-#include "color_skin.hpp"
-#include "main_frame.hpp"
+#include "color_skin.h"
+#include "main_frame.h"
 
 const TCHAR* const kAdjustColorControlName = _T("adjcolor");
 const TCHAR* const kAdjustBkControlName = _T("adjbk");

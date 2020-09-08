@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "debug.hpp"
+#include "debug.h"
 #include <winbase.h>
 
 #if defined(DBG_THREADSAFE)

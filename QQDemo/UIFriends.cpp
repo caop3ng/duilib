@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "UIFriends.hpp"
+#include "UIFriends.h"
 
 namespace DuiLib
 {

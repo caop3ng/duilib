@@ -44,7 +44,7 @@
 	using namespace std;
 #endif
 
-#include "debug.hpp"
+#include "debug.h"
 
 #define MESSAGE_RICHEDIT_MAX  1024
 

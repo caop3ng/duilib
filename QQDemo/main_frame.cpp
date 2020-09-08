@@ -4,11 +4,11 @@
 #include <shellapi.h>
 #endif
 
-#include "UIGroups.hpp"
-#include "UIMicroBlog.hpp"
-#include "main_frame.hpp"
-#include "color_skin.hpp"
-#include "chat_dialog.hpp"
+#include "UIGroups.h"
+#include "UIMicroBlog.h"
+#include "main_frame.h"
+#include "color_skin.h"
+#include "chat_dialog.h"
 
 const TCHAR* const kTitleControlName = _T("apptitle");
 const TCHAR* const kCloseButtonControlName = _T("closebtn");

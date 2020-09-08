@@ -1,5 +1,5 @@
 #include "stdafx.h"
-#include "UIMicroBlog.hpp"
+#include "UIMicroBlog.h"
 
 namespace DuiLib
 {

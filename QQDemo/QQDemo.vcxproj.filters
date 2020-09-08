@@ -1,94 +1,99 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Source Files">
-      <UniqueIdentifier>{bd1f1dd9-ff21-4866-a7f5-b330ebd0432c}</UniqueIdentifier>
-      <Extensions>cpp;c;cxx;rc;def;r;odl;idl;hpj;bat</Extensions>
-    </Filter>
-    <Filter Include="Header Files">
-      <UniqueIdentifier>{bb8a0a28-2a57-42c2-b75e-3a8c2debab53}</UniqueIdentifier>
-    </Filter>
     <Filter Include="Resource Files">
       <UniqueIdentifier>{efb044e6-c3ab-4629-86f4-ee02157fea42}</UniqueIdentifier>
     </Filter>
+    <Filter Include="src">
+      <UniqueIdentifier>{2e04f03a-fa20-4862-bd22-55aed06e78a1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="pch">
+      <UniqueIdentifier>{5a3e454c-43a3-4c04-922d-095f0d1f0502}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\chatdialog">
+      <UniqueIdentifier>{ba59ba86-3f99-424b-8c13-72da2b05ef71}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="src\debug">
+      <UniqueIdentifier>{c2be92fb-41e0-46ca-b928-66f168272f3f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="chat_dialog.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="ColorPicker.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="debug.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="color_skin.cpp">
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="main.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="main_frame.cpp">
-      <Filter>Source Files</Filter>
-    </ClCompile>
-    <ClCompile Include="StdAfx.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="UIFriends.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="UIGroups.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="UIListCommonDefine.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="UIMicroBlog.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
     <ClCompile Include="..\DuiLib\Utils\XUnzip.cpp">
-      <Filter>Source Files</Filter>
+      <Filter>src</Filter>
     </ClCompile>
-    <ClCompile Include="color_skin.cpp">
-      <Filter>Header Files</Filter>
+    <ClCompile Include="StdAfx.cpp">
+      <Filter>pch</Filter>
+    </ClCompile>
+    <ClCompile Include="chat_dialog.cpp">
+      <Filter>src\chatdialog</Filter>
+    </ClCompile>
+    <ClCompile Include="ColorPicker.cpp">
+      <Filter>src\chatdialog</Filter>
+    </ClCompile>
+    <ClCompile Include="debug.cpp">
+      <Filter>src\debug</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="chat_dialog.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="color_skin.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="ColorPicker.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="debug.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="main_frame.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="observer_impl_base.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="skin_change_event.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="StdAfx.h">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UIFriends.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UIGroups.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UIListCommonDefine.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
-    <ClInclude Include="UIMicroBlog.hpp">
-      <Filter>Header Files</Filter>
-    </ClInclude>
     <ClInclude Include="resource.h">
       <Filter>Resource Files</Filter>
+    </ClInclude>
+    <ClInclude Include="color_skin.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="main_frame.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="observer_impl_base.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="skin_change_event.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="UIFriends.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="UIGroups.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="UIListCommonDefine.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="UIMicroBlog.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="StdAfx.h">
+      <Filter>pch</Filter>
+    </ClInclude>
+    <ClInclude Include="chat_dialog.h">
+      <Filter>src\chatdialog</Filter>
+    </ClInclude>
+    <ClInclude Include="ColorPicker.h">
+      <Filter>src\chatdialog</Filter>
+    </ClInclude>
+    <ClInclude Include="debug.h">
+      <Filter>src\debug</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
